@@ -2,6 +2,11 @@
 
 :root{
   --main-color: #0F172A;
+  --cell-color: rgba(255,255,255,0.05);
+  --cell-border-color: rgba(255,255,255,0.02);
+  --tech-cell-color: rgba(79, 111, 133, 0.9);
+  --tech-font-color: rgb(0, 26, 37);
+  --background-fade-color: #152b60;
   --secondary-color: #0F224D;
   --light-secondary-color: #0f265c;
   --font-color: #8B8F9A;
