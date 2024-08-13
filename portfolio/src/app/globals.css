@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+  --main-color: #0F172A;
+  --secondary-color: #0F224D;
+  --light-secondary-color: #0f265c;
+  --font-color: #8B8F9A;
+  --highlighted-color: #e0e5f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-secondary-color);
+}

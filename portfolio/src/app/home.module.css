@@ -1,0 +1,113 @@
+.main{
+
+}
+
+.name {
+    font-weight: 500;
+    font-size: 2.7rem;
+    color: var(--highlighted-color);
+  }
+  
+.subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--highlighted-color);
+}
+
+.description{
+    font-weight: 500;
+    font-size: 0.96rem;
+    color: var(--font-color);
+}
+
+.left_container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right_container{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    height: 85%;
+    padding: 40px 0;
+    margin-top: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.right_container::before,
+.right_container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, var(--main-color), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.right_container::before {
+    top: 15%;
+    background: linear-gradient(to bottom, var(--main-color), transparent);
+}
+
+.right_container::after {
+    bottom: 0;
+    background: linear-gradient(to top, var(--main-color), transparent);
+}
+
+.right_container > i {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    padding-right: 30px;
+    color: var(--font-color);
+}
+
+.icons_container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.upper_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.70rem;
+}
+
+.icons_container > i {
+    font-size: 1.4rem;
+    color: var(--highlighted-color);
+}
+
+
+.highlighted, .highlighted:not(:hover){
+    transition: all 0.4s ease;
+    color: var(--highlighted-color);
+    text-decoration: none;
+}
+
+.highlighted:hover{
+    transition: all 0.4s ease;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.p_tag {
+    font-weight: 500;
+    font-size: 0.96rem;
+    color: var(--font-color);
+    padding: 20px 40px 20px 0px;
+}
