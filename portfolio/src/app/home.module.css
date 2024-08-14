@@ -223,3 +223,50 @@
     font-weight: 800;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
+
+
+
+@media only screen and (max-width:768px){
+    .left_container{
+        height: fit-content;
+        min-height: 35%;
+        max-height: 40%;
+        width: 100%;
+    }
+    .right_container{
+        padding: 50px 15px;
+        width: 100%;
+        height: max-content;
+        min-height: 60%;
+        max-height: 65%;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    .subtitle{
+        font-size: 1.3rem;
+    }
+    .description{
+        font-size: 0.85rem;
+    }
+
+    .p_tag{
+        padding: 10px 5px 10px 0px;
+        text-align: justify;
+        font-size: 0.85rem;
+    }
+
+    .detail{
+        width: 100%;
+    }
+    
+    .cell, .cell:not(:hover){
+        width: 100%;
+    }
+
+    .right_container::before,
+    .right_container::after {
+    display: none;
+    }
+
+}

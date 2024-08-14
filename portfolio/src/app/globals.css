@@ -8,6 +8,8 @@
   --tech-font-color: rgb(0, 26, 37);
   --background-fade-color: #152b60;
   --secondary-color: #0F224D;
+  --button-color: #3758a3;
+  --button-hover-color: #5472b9;
   --light-secondary-color: #0f265c;
   --font-color: #8B8F9A;
   --highlighted-color: #e0e5f3;
@@ -47,4 +49,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--light-secondary-color);
+}
+
+
+@media only screen and (max-width:768px){
+  body {
+  flex-direction: column;
+  }
 }
